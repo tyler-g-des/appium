@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Collection">
+
+    <parameter name="emailTo" value="tyler_diaz@bhd.com.do,mayobanex_quintana@bhdleon.com.do,luis_rivera@bhd.com.do"/>
+    <parameter name="emailCc" value="tyler_diaz@bhd.com.do,mayobanex_quintana@bhdleon.com.do,luis_rivera@bhd.com.do,jairis_rosario@bhd.com.do,ever_curiel@bhd.com.do,gabriela_beato@bhd.com.doangel_dominguez@bhd.com.do,angel_gonzalezr@bhd.com.do"/>
+
+    <parameter name="browserName" value="EDGE" />
+
+    <listeners>
+        <listener class-name="utils.SuiteListener"/>
+    </listeners>
+<!--
+    <test name="Login MBP" >
+        <classes>
+            <class name="MBP.TEiniciarSesion"></class>
+        </classes>
+    </test>
+
+    <test name="Dashboard" >
+        <classes>
+            <class name="MBP.TEdashboard"></class>
+        </classes>
+    </test>
+
+    <test name="Matenimiento" >
+        <classes>
+            <class name="MBP.TEmantenimineto"></class>
+        </classes>
+    </test>
+
+    <test name="Historico transacciones" >
+        <classes>
+            <class name="MBP.TEhistoricoTransacciones"></class>
+        </classes>
+    </test>
+-->
+    <test name="Pago de servicio" >
+        <classes>
+            <class name="MBP.TEpagoServicio"></class>
+        </classes>
+    </test>
+<!--
+    <test name="Transacciones SIPA" >
+        <classes>
+            <class name="MBP.TEsipa"></class>
+        </classes>
+    </test>
+
+    <test name="Transacciones a propia" >
+        <classes>
+            <class name="MBP.TEtransferenciaPropia"></class>
+        </classes>
+    </test>
+
+    <test name="Transacciones a terceros" >
+        <classes>
+            <class name="MBP.TEtransferenciaTerceros"></class>
+        </classes>
+    </test>
+
+    <test name="Transacciones Internacionales" >
+        <classes>
+            <class name="MBP.TEinternational"></class>
+        </classes>
+    </test>
+
+    <test name="Transacciones Pin Pesos" >
+        <classes>
+            <class name="MBP.TEpinPesos"></class>
+        </classes>
+    </test>
+
+    <test name="Configuracion de perfil" >
+        <classes>
+            <class name="MBP.TEconfigurarPerfil"></class>
+        </classes>
+    </test>
+-->
+</suite>
